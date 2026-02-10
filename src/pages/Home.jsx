@@ -1,11 +1,11 @@
-
-
+import Banner from "../components/sections/Banner";
 
 const Home = () => {
-    return (
-        <>
-        </>
-    )
-}
+  return (
+    <>
+      <Banner />
+    </>
+  );
+};
 
-export default Home
+export default Home;

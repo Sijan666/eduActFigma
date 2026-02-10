@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
-
 @theme {
-    --font-Urbanist: "Urbanist", sans-serif; 
-    --shadow-newMade: 0 28px 30px rgba(99, 122, 166, 0.05);
-    --color-primary: #4F5DE4;
-    --color-secondary: #F57005;
+  --font-Urbanist: "Urbanist", sans-serif;
+  --shadow-newMade: 0 28px 30px rgba(99, 122, 166, 0.05);
+  --color-primary: #4f5de4;
+  --color-secondary: #f57005;
+}
+.clip-ss {
+  clip-path: polygon(0 0, 96% 0, 81% 100%, 0 100%);
 }
