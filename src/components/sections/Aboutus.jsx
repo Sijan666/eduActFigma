@@ -13,21 +13,21 @@ const Aboutus = () => {
   return (
     <div className="aboutUs my-[120px]">
       <Container>
-        <Flex className={"items-start gap-x-[65px]"}>
+        <Flex className={"gap-x-[65px]"}>
           <div className="">
             <Images imgSrc={aboutUs} />
           </div>
           <div className="">
             <div className="flex items-center gap-x-2">
-              <h4 className="text-2xl text-[#4F5DE4] font-black font-Urbanist">
-                about Us
+              <h4 className="text-2xl text-primary font-bold ">
+                About Us
               </h4>
-              <Images imgSrc={aboutUsIcon} className={"h-[10px] w-[10px]"} />
+              <Images imgSrc={aboutUsIcon} className={"h-2.5 w-2.5"} />
             </div>
-            <h3 className="text-[#2A254D] text-[40px] font-black font-Urbanist w-[630px] leading-11 mt-7">
+            <h3 className="text-primaryTwo text-[40px] font-bold w-[630px] leading-11 mt-7">
               Establishing a community that encourages lifelong learning
             </h3>
-            <p className="text-[#697585] text-base font-semibold font-Urbanist w-[642px] leading-6 my-10">
+            <p className="text-[#697585] text-base font-semibold  w-[642px] leading-6 my-10">
               It uses a dictionary of over 200 Latin words, combined with a
               handful of model sentence structures, to generate Lorem Ipsum
               which looks
@@ -35,27 +35,27 @@ const Aboutus = () => {
             <Images imgSrc={aboutUsRight} />
             <div className="flex gap-x-[65px] mt-12">
               <div className="flex items-center gap-x-3">
-                <IoIosCheckmarkCircle className="text-[#4F5DE4] text-[20px] font-bold font-Urbanist" />
+                <IoIosCheckmarkCircle className="text-primary text-[20px] font-bold" />
                 <h4>Free Incoming method</h4>
               </div>
               <div className="flex items-center gap-x-3">
-                <IoIosCheckmarkCircle className="text-[#F57005] text-[20px] font-bold font-Urbanist" />
+                <IoIosCheckmarkCircle className="text-secondary text-[20px] font-bold" />
                 <h4>Provide Best Support</h4>
               </div>
             </div>
             <div className="flex gap-x-[72px] mt-1">
               <div className="flex items-center gap-x-3">
-                <IoIosCheckmarkCircle className="text-[#F57005] text-[20px] font-bold font-Urbanist" />
+                <IoIosCheckmarkCircle className="text-secondary text-[20px] font-bold" />
                 <h4>Expert Many Teacher </h4>
               </div>
               <div className="flex items-center gap-x-3">
-                <IoIosCheckmarkCircle className="text-[#4F5DE4] text-[20px] font-bold font-Urbanist" />
+                <IoIosCheckmarkCircle className="text-primary text-[20px] font-bold " />
                 <h4>Lifetime access </h4>
               </div>
             </div>
             <button
               className={
-                "mt-12 bg-[#4F5DE4] py-6 px-[31px] rounded-md text-white cursor-pointer text-[18px] font-black font-Urbanist flex items-center gap-x-2.5"
+                "mt-12 bg-primtext-primary py-6 px-[31px] rounded-md text-white cursor-pointer text-[18px] font-black flex items-center gap-x-2.5"
               }
             >
               Discover More <FaArrowRightLong />
