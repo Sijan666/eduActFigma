@@ -79,17 +79,16 @@ const OurService = () => {
               />
               </header>
               <Flex className={"gap-3.5 justify-end pb-[43px]"}>
-                <div className="h-10 w-10 bg-white rounded-sm flex justify-center items-center group hover:bg-primary duration-300  ">
+                <div className="h-10 w-10 bg-white rounded-sm flex justify-center items-center group hover:bg-primary transition-all cursor-pointer duration-300  ">
                   <FaArrowLeftLong className="text-primary group-hover:text-white" />
                 </div>
-                <div className="h-10 w-10 bg-white rounded-sm flex justify-center items-center group hover:bg-primary duration-300">
+                <div className="h-10 w-10 bg-white rounded-sm flex justify-center items-center group hover:bg-primary transition-all cursor-pointer duration-300">
                   <FaArrowRightLong className="text-primary group-hover:text-white" />
                 </div>
               </Flex>
             </Container>
           </div>
         </div>
-        ;
       </section>
     </>
   );
