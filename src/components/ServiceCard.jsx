@@ -29,7 +29,7 @@ const ServiceCard = ({serviceCardImage,cardHeading,cardContent}) => {
           </div>
           <div className="w-full border-b border-[#E4E4E4] mt-10"></div>
           <div className="py-[30px] flex items-center gap-x-[9px] justify-center group-hover:bg-[#152B4A] transition-colors duration-300 ">
-            <p className="font-Urbanist font-bold text-base text-primaryTwo group-hover:text-white ">
+            <p className="font-Urbanist font-bold text-base text-primaryTwo group-hover:text-white cursor-pointer">
               Read More
             </p>
             <MdOutlineKeyboardArrowRight className="text-secondary text-[20px]" />
