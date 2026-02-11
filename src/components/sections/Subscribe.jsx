@@ -4,17 +4,21 @@ import Flex from "../Flex";
 
 const Subscribe = () => {
   return (
-    <div className="mt-50">
+    <div className="lg:mt-50 mt-30">
       <Container
         className={
-          "bg-[url(/src/assets/subscribe.png)] py-20 px-[77px] bg-no-repeat bg-center"
+          "lg:bg-[url(/src/assets/subscribe.png)] bg-primary lg:py-20 py-15 px-[77px] rounded-2xl lg:rounded-tl-[14px] lg:rounded-tr-[14px] lg:rounded-br-none lg:rounded-bl-none bg-no-repeat bg-center"
         }
       >
-        <Flex className={"justify-between"}>
-          <h3 className="text-[40px] text-white font-bold w-[500px]">
+        <Flex
+          className={
+            "lg:justify-between justify-normal gap-y-8 flex-col lg:flex-row"
+          }
+        >
+          <h3 className="lg:text-[40px] text-3xl text-white font-bold lg:w-[500px] w-[340px]">
             Subscribe to our newsletter for daily updates
           </h3>
-          <Flex className={"gap-x-3"}>
+          <Flex className={"lg:gap-x-3 gap-y-4 lg:flex-row flex-col"}>
             <input
               type="email"
               placeholder="Email Address"
