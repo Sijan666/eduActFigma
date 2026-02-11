@@ -99,6 +99,13 @@ const Footer = () => {
             </Flex>
           </Container>
         </div>
+        {/* footer bottom copyright section */}
+        <div className="bg-[#1F1944] py-[35px]">
+          <Container>
+            <p className="text-base text-[#B3ADE1] text-center">© Copyright 2023 by Company.com</p>
+          </Container>
+        </div>
+        {/* footer bottom copyright section */}
       </footer>
     </>
   )

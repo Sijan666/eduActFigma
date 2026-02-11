@@ -9,7 +9,7 @@ const Discover = () => {
         <>
         <section className='discover'>
             {/* <Container> */}
-                <div className={"bg-[url('/src/assets/discoverBg.png')] bg-center bg-cover bg-no-repeat py-20 lg:px-30 w-full lg:w-330 px-5 mx-auto"}>
+                <div className={"bg-[url('/src/assets/discoverBg.png')] bg-center bg-cover bg-no-repeat py-20 lg:px-30 w-full lg:w-330 px-5 mx-auto rounded-bl-[14px] rounded-br-[14px]"}>
                     {/* common tag */}
                     <Commonh3 commonh3={'Discover the campus through a video tour'} className={'leading-10 lg:w-132 text-white lg:pb-10 pb-3 text-center lg:text-left'}/>
                     {/* common tag */}
