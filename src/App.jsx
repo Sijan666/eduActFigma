@@ -5,8 +5,7 @@ import RootLayouts from './components/layouts/RootLayouts'
 import Contact from './pages/Contact'
 import Error from './pages/Error'
 
-
-function App () {
+function App() {
   return (
     <>
       <Routes>
@@ -17,9 +16,7 @@ function App () {
           <Route path="*" element={<Error/>} />
       </Routes>
     </>
-  )
+  );
 }
 
-export default App
-
-
+export default App;
