@@ -7,7 +7,7 @@ const Blog = () => {
   return (
     <>
       {/* Header part */}
-      <div className="pt-[174px] pb-[154px] bg-black text-center text-white">
+      <div className="lg:pt-[174px] lg:pb-[154px] py-25 bg-black text-center text-white">
         <Container>
           <h3 className="font-bold text-[50px] uppercase">Blog</h3>
           <p className="text-xl pt-4">Home / Blog</p>
@@ -15,8 +15,8 @@ const Blog = () => {
       </div>
       {/* Header part */}
       {/* Product part */}
-      <Container className={"mt-30"}>
-        <Flex className={"gap-9 flex-wrap"}>
+      <Container className={"lg:mt-30 mt-20 "}>
+        <Flex className={"gap-9 flex-wrap justify-center lg:justify-normal"}>
           <BlogPost />
           <BlogPost />
           <BlogPost />
