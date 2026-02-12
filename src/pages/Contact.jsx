@@ -14,7 +14,7 @@ import { PiPhoneCall } from "react-icons/pi"
 const Contact = () => {
   return (
     <>
-    <section className="aboutPage">
+    <section className="contact">
       {/* common bg for pages */}
       <div className="bg-[url('/src/assets/commonPage.png')] pt-[174px] pb-[154px]">
       {/* common bg for pages */}

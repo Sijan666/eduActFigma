@@ -7,6 +7,7 @@ import Error from './pages/Error'
 import TeacherDetails from './pages/TeacherDetails'
 import Blog from './pages/Blog'
 import Login from './pages/Login'
+import Checkout from './pages/Checkout'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/teacherDetails" element={<TeacherDetails/>} />
           <Route path="/blog" element={<Blog/>} />
           <Route path="/login" element={<Login/>} />
+          <Route path="/checkout" element={<Checkout/>} />
         </Route>
           <Route path="*" element={<Error/>} />
       </Routes>
