@@ -1,25 +1,28 @@
-
-import Home from './pages/Home'
-import { Routes , Route } from 'react-router-dom'
-import RootLayouts from './components/layouts/RootLayouts'
-import Contact from './pages/Contact'
-import Error from './pages/Error'
-import TeacherDetails from './pages/TeacherDetails'
-import Blog from './pages/Blog'
-import Login from './pages/Login'
+import Home from "./pages/Home";
+import { Routes, Route } from "react-router-dom";
+import RootLayouts from "./components/layouts/RootLayouts";
+import Contact from "./pages/Contact";
+import Error from "./pages/Error";
+import TeacherDetails from "./pages/TeacherDetails";
+import Blog from "./pages/Blog";
+import Login from "./pages/Login";
+import BlogSidebar from "./pages/BlogSidebar";
+import BlogDetailes from "./pages/BlogDetailes";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<RootLayouts />}>
-          <Route index element={<Home/>} />
-          <Route path="/contact" element={<Contact/>} />
-          <Route path="/teacherDetails" element={<TeacherDetails/>} />
-          <Route path="/blog" element={<Blog/>} />
-          <Route path="/login" element={<Login/>} />
+          <Route index element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/teacherDetails" element={<TeacherDetails />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/blogSidebar" element={<BlogSidebar />} />
+          <Route path="/blogDetailes" element={<BlogDetailes />} />
         </Route>
-          <Route path="*" element={<Error/>} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </>
   );

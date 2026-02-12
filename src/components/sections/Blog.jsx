@@ -1,8 +1,7 @@
-import BlogPost from "../BlogPost";
+import BlogCard from "../BlogCard";
 import Container from "../Container";
 import Flex from "../Flex";
 import { FaAngleRight } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa6";
 
 const Blog = () => {
   return (
@@ -28,9 +27,9 @@ const Blog = () => {
         {/* Header part */}
         <Flex className={"lg:gap-x-9 gap-y-9 flex-col lg:flex-row"}>
           {/* Products */}
-          <BlogPost />
-          <BlogPost />
-          <BlogPost />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
           {/* Products */}
         </Flex>
       </Container>

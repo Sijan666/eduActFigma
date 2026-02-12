@@ -1,4 +1,4 @@
-import BlogPost from "../components/BlogPost";
+import BlogCard from "@/components/BlogCard";
 import Container from "../components/Container";
 import Flex from "../components/Flex";
 import { FaChevronRight } from "react-icons/fa";
@@ -17,12 +17,12 @@ const Blog = () => {
       {/* Product part */}
       <Container className={"lg:mt-30 mt-20 "}>
         <Flex className={"gap-9 flex-wrap justify-center lg:justify-normal"}>
-          <BlogPost />
-          <BlogPost />
-          <BlogPost />
-          <BlogPost />
-          <BlogPost />
-          <BlogPost />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
         </Flex>
         {/* Pagination */}
         <Flex className="mx-auto mt-[60px] mb-25 gap-x-4 justify-center">

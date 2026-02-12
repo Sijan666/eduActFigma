@@ -1,7 +1,7 @@
 import { FaArrowRight } from "react-icons/fa";
 import Flex from "./Flex";
 
-const BlogPost = () => {
+const BlogCard = () => {
   return (
     <div className="bg-[#152B4A] lg:h-[488px] h-[400px] lg:w-[416px] rounded-[14px] relative group mb-20 w-[90%]">
       <div className="absolute lg:w-[357px] w-[300px] bg-white -bottom-20 left-1/2 -translate-x-1/2 shadow-newMade p-7 rounded-tl-[10px] rounded-tr-[10px] rounded-bl-[50px] rounded-br-[50px]">
@@ -37,4 +37,4 @@ const BlogPost = () => {
   );
 };
 
-export default BlogPost;
+export default BlogCard;
