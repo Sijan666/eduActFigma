@@ -8,6 +8,7 @@ import TeacherDetails from './pages/TeacherDetails'
 import Blog from './pages/Blog'
 import Login from './pages/Login'
 import Checkout from './pages/Checkout'
+import Cart from './pages/Cart'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/blog" element={<Blog/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/checkout" element={<Checkout/>} />
+          <Route path="/cart" element={<Cart/>} />
         </Route>
           <Route path="*" element={<Error/>} />
       </Routes>
