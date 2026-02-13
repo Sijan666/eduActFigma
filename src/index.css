@@ -8,6 +8,7 @@
     --font-Urbanist: "Urbanist", sans-serif; 
     --shadow-newMade: 0px 0px 60px 0px rgba(0, 0, 0, 0.07);
     --shadow-newMade2: 0 28px 30px rgba(99, 122, 166, 0.05);
+    --shadow-newMade3: 0px 8px 30px 0px rgba(0, 0, 0, 0.08);
     --color-primarys: #4F5DE4;
     --color-primaryTwo: #2A254D;
     --color-secondarys: #F57005;
@@ -136,4 +137,33 @@
     @apply bg-background text-foreground;
     @apply bg-background text-foreground;
     }
+}
+
+
+
+.custom-range-slider .relative {
+  height: 6px !important; 
+  background-color: #F6F6F6 !important; 
+  border-radius: 9999px;
+}
+
+
+.custom-range-slider .absolute {
+  background-color: var(--color-secondarys) !important;
+}
+
+.custom-range-slider [role="slider"] {
+  height: 24px !important; 
+  width: 24px !important; 
+  background-color: var(--color-secondarys) !important; 
+  border-radius: 9999px !important;
+  border: none !important; 
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important; 
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.custom-range-slider [role="slider"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-secondarys), 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important; 
 }

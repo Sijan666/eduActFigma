@@ -41,7 +41,7 @@ const Contact = () => {
               <Commonh3 commonh3={"Feel free to write us anytime"} className={'text-primaryTwo'}/>
           </div>
           {/* common text part */}
-          {/* inpur section */}
+          {/* input section */}
           <div className="pt-15">
             <Flex className={'lg:justify-center gap-x-5 flex-wrap gap-y-5'}>
               <input type="text" placeholder="Your Name" className="py-[25px] px-7.5 bg-[#F6F6F6] text-[#697585] text-base font-bold rounded-sm w-[424px] outline-none"/>
@@ -79,7 +79,7 @@ const Contact = () => {
             </div>
             {/* cart part */}
           </div>
-          {/* inpur section */}
+          {/* input section */}
         </Container>
       </div>
       {/* map */}
