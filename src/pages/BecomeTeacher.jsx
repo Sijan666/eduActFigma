@@ -57,7 +57,7 @@ const BecomeTeacher = () => {
                                 <p className='text-base text-[#697585] font-semibold leading-8'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
                             </div>
                         </div>
-                        <div className="right mt-7.5 lg:mt-0 p-7.5 shadow-newMade lg:w-[529px]">
+                        <div className="right mt-7.5 lg:mt-0 p-7.5 shadow-newMade lg:w-[529px] rounded-[14px]">
                             <h4 className='text-[24px] font-bold text-primaryTwo pb-7.5 border-b border-dashed border-secondarys'>Apply for Registration</h4>
                             <div className="pt-7.5">
                                 <input type="text" placeholder='Your Name' className='px-7.5 py-[25px] bg-[#F6F6F6] text-[#697585] text-base font-semibold w-full outline-none rounded-sm mb-7.5'/>
