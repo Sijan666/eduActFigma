@@ -38,173 +38,171 @@ const Faq = () => {
           Frequently asked Question & Answers Here
         </h3>
         {/* Header part */}
-        <div className="flex">
-          <Accordion
-            type="single"
-            collapsible
-            defaultValue="shipping"
-            className="max-w-lg"
-          >
-            <div className="flex flex-col gap-y-5">
-              <AccordionItem
-                value="shipping "
+        <Accordion
+          type="single"
+          collapsible
+          defaultValue="shipping"
+          className="max-w-[1100px] mx-auto"
+        >
+          <div className="flex flex-col gap-y-5">
+            <AccordionItem
+              value="shipping "
+              className={
+                "border-[#E4E4E4] border-2 rounded-xl py-9 px-10 w-[1100px] "
+              }
+            >
+              <AccordionTrigger
                 className={
-                  "border-[#E4E4E4] border-2 rounded-xl py-9 px-10 w-[1100px] "
+                  "hover:no-underline hover:cursor-pointer text-primaryTwo text-base font-semibold"
                 }
               >
-                <AccordionTrigger
-                  className={
-                    "hover:no-underline hover:cursor-pointer text-primaryTwo text-base font-semibold"
-                  }
-                >
-                  What Happens to my data if I cancel?
-                </AccordionTrigger>
-                <AccordionContent
-                  className={
-                    "mt-10 text-base text-[#697585] font-semibold w-[945px]"
-                  }
-                >
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomised words which don't look
-                  even slightly believable. If you are going to use a passage of
-                  Lorem Ipsum, you need to be sure there isn't anything
-                  embarrassing hidden in the middle of text.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem
-                value="shipping "
+                What Happens to my data if I cancel?
+              </AccordionTrigger>
+              <AccordionContent
                 className={
-                  "border-[#E4E4E4] border-2 rounded-xl py-9 px-10 w-[1100px] "
+                  "mt-10 text-base text-[#697585] font-semibold w-[945px]"
                 }
               >
-                <AccordionTrigger
-                  className={
-                    "hover:no-underline hover:cursor-pointer text-primaryTwo text-base font-semibold"
-                  }
-                >
-                  What Happens to my data if I cancel?
-                </AccordionTrigger>
-                <AccordionContent
-                  className={
-                    "mt-10 text-base text-[#697585] font-semibold w-[945px]"
-                  }
-                >
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomised words which don't look
-                  even slightly believable. If you are going to use a passage of
-                  Lorem Ipsum, you need to be sure there isn't anything
-                  embarrassing hidden in the middle of text.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem
-                value="shipping "
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem
+              value="shipping "
+              className={
+                "border-[#E4E4E4] border-2 rounded-xl py-9 px-10 w-[1100px] "
+              }
+            >
+              <AccordionTrigger
                 className={
-                  "border-[#E4E4E4] border-2 rounded-xl py-9 px-10 w-[1100px] "
+                  "hover:no-underline hover:cursor-pointer text-primaryTwo text-base font-semibold"
                 }
               >
-                <AccordionTrigger
-                  className={
-                    "hover:no-underline hover:cursor-pointer text-primaryTwo text-base font-semibold"
-                  }
-                >
-                  What Happens to my data if I cancel?
-                </AccordionTrigger>
-                <AccordionContent
-                  className={
-                    "mt-10 text-base text-[#697585] font-semibold w-[945px]"
-                  }
-                >
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomised words which don't look
-                  even slightly believable. If you are going to use a passage of
-                  Lorem Ipsum, you need to be sure there isn't anything
-                  embarrassing hidden in the middle of text.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem
-                value="shipping "
+                What Happens to my data if I cancel?
+              </AccordionTrigger>
+              <AccordionContent
                 className={
-                  "border-[#E4E4E4] border-2 rounded-xl py-9 px-10 w-[1100px] "
+                  "mt-10 text-base text-[#697585] font-semibold w-[945px]"
                 }
               >
-                <AccordionTrigger
-                  className={
-                    "hover:no-underline hover:cursor-pointer text-primaryTwo text-base font-semibold"
-                  }
-                >
-                  What Happens to my data if I cancel?
-                </AccordionTrigger>
-                <AccordionContent
-                  className={
-                    "mt-10 text-base text-[#697585] font-semibold w-[945px]"
-                  }
-                >
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomised words which don't look
-                  even slightly believable. If you are going to use a passage of
-                  Lorem Ipsum, you need to be sure there isn't anything
-                  embarrassing hidden in the middle of text.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem
-                value="shipping "
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem
+              value="shipping "
+              className={
+                "border-[#E4E4E4] border-2 rounded-xl py-9 px-10 w-[1100px] "
+              }
+            >
+              <AccordionTrigger
                 className={
-                  "border-[#E4E4E4] border-2 rounded-xl py-9 px-10 w-[1100px] "
+                  "hover:no-underline hover:cursor-pointer text-primaryTwo text-base font-semibold"
                 }
               >
-                <AccordionTrigger
-                  className={
-                    "hover:no-underline hover:cursor-pointer text-primaryTwo text-base font-semibold"
-                  }
-                >
-                  What Happens to my data if I cancel?
-                </AccordionTrigger>
-                <AccordionContent
-                  className={
-                    "mt-10 text-base text-[#697585] font-semibold w-[945px]"
-                  }
-                >
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomised words which don't look
-                  even slightly believable. If you are going to use a passage of
-                  Lorem Ipsum, you need to be sure there isn't anything
-                  embarrassing hidden in the middle of text.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem
-                value="shipping "
+                What Happens to my data if I cancel?
+              </AccordionTrigger>
+              <AccordionContent
                 className={
-                  "border-[#E4E4E4] border-2 rounded-xl py-9 px-10 w-[1100px]"
+                  "mt-10 text-base text-[#697585] font-semibold w-[945px]"
                 }
               >
-                <AccordionTrigger
-                  className={
-                    "hover:no-underline hover:cursor-pointer text-primaryTwo text-base font-semibold"
-                  }
-                >
-                  What Happens to my data if I cancel?
-                </AccordionTrigger>
-                <AccordionContent
-                  className={
-                    "mt-10 text-base text-[#697585] font-semibold w-[945px]"
-                  }
-                >
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomised words which don't look
-                  even slightly believable. If you are going to use a passage of
-                  Lorem Ipsum, you need to be sure there isn't anything
-                  embarrassing hidden in the middle of text.
-                </AccordionContent>
-              </AccordionItem>
-            </div>
-          </Accordion>
-        </div>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem
+              value="shipping "
+              className={
+                "border-[#E4E4E4] border-2 rounded-xl py-9 px-10 w-[1100px] "
+              }
+            >
+              <AccordionTrigger
+                className={
+                  "hover:no-underline hover:cursor-pointer text-primaryTwo text-base font-semibold"
+                }
+              >
+                What Happens to my data if I cancel?
+              </AccordionTrigger>
+              <AccordionContent
+                className={
+                  "mt-10 text-base text-[#697585] font-semibold w-[945px]"
+                }
+              >
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem
+              value="shipping "
+              className={
+                "border-[#E4E4E4] border-2 rounded-xl py-9 px-10 w-[1100px] "
+              }
+            >
+              <AccordionTrigger
+                className={
+                  "hover:no-underline hover:cursor-pointer text-primaryTwo text-base font-semibold"
+                }
+              >
+                What Happens to my data if I cancel?
+              </AccordionTrigger>
+              <AccordionContent
+                className={
+                  "mt-10 text-base text-[#697585] font-semibold w-[945px]"
+                }
+              >
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem
+              value="shipping "
+              className={
+                "border-[#E4E4E4] border-2 rounded-xl py-9 px-10 w-[1100px]"
+              }
+            >
+              <AccordionTrigger
+                className={
+                  "hover:no-underline hover:cursor-pointer text-primaryTwo text-base font-semibold"
+                }
+              >
+                What Happens to my data if I cancel?
+              </AccordionTrigger>
+              <AccordionContent
+                className={
+                  "mt-10 text-base text-[#697585] font-semibold w-[945px]"
+                }
+              >
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text.
+              </AccordionContent>
+            </AccordionItem>
+          </div>
+        </Accordion>
         {/* Faq part */}
         {/* <Flex className="border-[#E4E4E4] border-2 rounded-xl justify-between py-9 px-10">
           <p className="text-base  font-semibold">
@@ -229,7 +227,7 @@ const Faq = () => {
         {/* Faq part */}
 
         {/* Call part */}
-        <div className="w-[1100px] bg-primarys rounded-[14px] px-[285px] py-[52px] my-30 text-center cursor-pointer">
+        <div className="w-[1100px] mx-auto bg-[#4353c5] rounded-[14px] px-[285px] py-[52px] my-30 text-center cursor-pointer">
           <div className="text-secondarys bg-white text-[28px] p-4.5 w-[67px] h-[65px] rounded-full mx-auto">
             <FiPhoneCall />
           </div>
