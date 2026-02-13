@@ -137,7 +137,7 @@ const Checkout = () => {
                             </div>
                                 {/* button */}
                                 <div className="bg-[#f58c37] text-white text-[18px] font-bold rounded-md w-[238px]  mt-12.5">
-                                <Button btnText={<>Plance your Order<FaArrowRight /></>}className={"bg-secondarys py-[19px] px-8 rounded-md w-[238px] clip-ss flex items-center gap-x-2"}/>
+                                    <Button btnText={<>Plance your Order<FaArrowRight /></>}className={"bg-secondarys py-[19px] px-8 rounded-md w-[238px] clip-ss flex items-center gap-x-2"}/>
                                 </div>
                                 {/* button */}
                         </div>

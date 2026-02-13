@@ -10,6 +10,7 @@ import Login from './pages/Login'
 import Checkout from './pages/Checkout'
 import Cart from './pages/Cart'
 import Product from './pages/Product'
+import BecomeTeacher from './pages/BecomeTeacher'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/checkout" element={<Checkout/>} />
           <Route path="/cart" element={<Cart/>} />
           <Route path="/product" element={<Product/>} />
+          <Route path="/becomeTeacher" element={<BecomeTeacher/>} />
         </Route>
           <Route path="*" element={<Error/>} />
       </Routes>
