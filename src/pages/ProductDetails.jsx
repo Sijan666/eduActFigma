@@ -13,6 +13,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import Commonh4 from "../components/Commonh4";
 import { IoIosCheckmarkCircle } from "react-icons/io";
+import reviewImg from "../../src/assets/reviewimg.png"
 
 export const ProductDetails = () => {
   return (
@@ -176,6 +177,11 @@ export const ProductDetails = () => {
             </div>
             <div className="w-full border-b border-[#E4E4E4] my-[60px]"></div>
             <p className="font-Urbanist font-bold text-[24px] text-primaryTwo leading-[47px]">2 Reviews</p>
+            <div className="pt-[60px] pb-20">
+              <div className="pb-[60px] border-b border-[#E4E4E4] flex items-center gap-[30px]">
+              <Images imgSrc={reviewImg}/>
+              </div>
+            </div>
             {/* Description End */}
           </Container>
         </div>
