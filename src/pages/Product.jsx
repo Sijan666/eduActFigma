@@ -12,28 +12,26 @@ const Product = () => {
     const [priceRange, setPriceRange] = useState([75]);
     const currentPrice = priceRange[0] * 25;
 
-
     return (
         <>
         <section className='product'>
             {/* common bg for pages */}
-            <div className="bg-[url('/src/assets/commonPage.png')] pt-[174px] pb-[154px]">
+            <div className="bg-[url('/src/assets/commonPage.png')] bg-cover bg-center pt-[100px] pb-[100px] lg:pt-[174px] lg:pb-[154px]">
             {/* common bg for pages */}
                 <Container>
                 {/* common tag for pages */}
                 <div className="text-center">
-                    <h3 className="text-[50px] font-bold text-white uppercase">Product</h3>
-                    <p className="text-[20px] text-white">Home  /  Product</p>
+                    <h3 className="text-[36px] lg:text-[50px] font-bold text-white uppercase">Product</h3>
+                    <p className="text-[16px] lg:text-[20px] text-white">Home  /  Product</p>
                 </div>
                 {/* common tag for pages */}
                 </Container>
             </div>
-            <div className="py-30">
+            <div className="py-10 lg:py-30">
                 <Container>
-                    <Flex className={'items-start gap-x-9'}>
-                        {/* leftBar */}
-                        <div className="left w-[20%]">
-                            <div className="px-7.5 py-7.5 bg-secondarys rounded-[7px]">
+                    <Flex className={'flex-col lg:flex-row items-start gap-y-10 lg:gap-x-9'}>
+                        <div className="left w-full lg:w-[20%]">
+                            <div className="px-7.5 py-7.5 bg-secondarys rounded-[7px] ">
                                 <p className='flex items-center gap-x-2 text-white text-base'><IoSearch  className='text-[20px]'/>Type Here</p>
                             </div>
                             <div className="mt-9 p-7.5 shadow-newMade rounded-[14px]">
@@ -49,10 +47,10 @@ const Product = () => {
                                 </div>
                                 <div className="price py-6">
                                     <Flex className={"justify-between"}>
-                                        <p className="text-[#697585] text-base font-semibold">
-                                            $0 - $ {currentPrice}
-                                        </p>
-                                        <p className='px-4 py-3.5 bg-[#F6F6F6] rounded-[5px] text-[#697585] text-base font-semibold cursor-pointer'>Apply</p>
+                                            <p className="text-[#697585] text-base font-semibold">
+                                                $0 - $ {currentPrice}
+                                            </p>
+                                            <p className='px-4 py-3.5 bg-[#F6F6F6] rounded-[5px] text-[#697585] text-base font-semibold cursor-pointer'>Apply</p>
                                     </Flex>
                                 </div>
                             </div>
@@ -78,21 +76,21 @@ const Product = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* leftBar */}
+                        {/* leftBar End */}
                         {/* right side */}
-                        <div className="right w-[80%]">
-                            <div className="flex items-center justify-between">
+                        <div className="right w-full lg:w-[80%]">
+                            <div className="flex flex-col md:flex-row items-center justify-between gap-y-4">
                                 <div className="">
                                     <p className='text-[20px] text-[#697585] font-bold'>Showing 1-9 of 12 Results</p>
                                 </div>
-                                <div className="px-7.5 py-7.5 bg-[#F6F6F6] rounded-[7px]">
-                                    <p className='text-[#697585] text-base font-semibold lg:w-[303px]'>Short By Popular</p>
+                                <div className="px-7.5 py-4 lg:py-7.5 bg-[#F6F6F6] rounded-[7px] w-full md:w-auto text-center md:text-left">
+                                    <p className='text-[#697585] text-base font-semibold lg:w-[303px]'>Sort By Popular</p>
                                 </div>
                             </div>
                             <div className="pt-9">
-                                <div className="flex flex-wrap justify-between gap-x-9 gap-y-9">
+                                <div className="flex flex-wrap justify-between gap-x-4 gap-y-9">
                                     {productApi?.map((item)=>(
-                                        <div key={item?.id} className='w-[30%] grow'>
+                                        <div key={item?.id} className='w-full sm:w-[48%] lg:w-[30%] grow'>
                                             <ProductCard 
                                             productImg={item?.productImg}
                                             productTitle={item?.productTitle}
@@ -105,7 +103,7 @@ const Product = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* right side */}
+                        {/* right side End */}
                     </Flex>
                 </Container>
             </div>
