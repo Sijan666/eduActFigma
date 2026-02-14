@@ -6,71 +6,66 @@ import aboutUs from "/src/assets/aboutUs.png";
 import aboutUsIcon from "/src/assets/aboutUsRightIcon.png";
 import aboutUsRight from "/src/assets/aboutUsRight.png";
 import { IoIosCheckmarkCircle } from "react-icons/io";
-import Button from "../Button";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const Aboutus = () => {
   return (
     <div className="aboutUs lg:my-30 my-15">
-      <Container>
-        <Flex className={"gap-x-[65px] flex flex-wrap lg:flex-nowrap"}>
-          <div className="">
-            <Images imgSrc={aboutUs} />
+      {/* Container */}
+      <Container className="w-[390px] lg:w-330 mx-auto">
+        <Flex className={"gap-x-[65px] flex flex-wrap lg:flex-nowrap items-center justify-center"}>
+          {/* Image Section */}
+          <div className="w-full lg:w-auto flex justify-center">
+            <Images imgSrc={aboutUs} className="max-w-full h-auto" />
           </div>
-          <div className="mx-auto lg:mx-0">
-            <div className="flex items-center gap-x-2 pt-10 lg:pt-0">
-              <h4 className="text-2xl text-primarys font-bold ">About Us</h4>
+          {/* Content Section */}
+          <div className="mx-auto lg:mx-0 w-full lg:w-auto">
+            <div className="flex items-center gap-x-2 pt-10 lg:pt-0 justify-center lg:justify-start">
+              <h4 className="text-xl lg:text-2xl text-primarys font-bold">About Us</h4>
               <Images imgSrc={aboutUsIcon} className={"h-2.5 w-2.5"} />
             </div>
-            <h3 className="text-primaryTwo text-[40px] font-bold lg:w-[630px] w-100 leading-11 mt-7">
+            {/* Title */}
+            <h3 className="text-primaryTwo text-[28px] lg:text-[40px] font-bold lg:w-[630px] w-full leading-tight lg:leading-11 mt-5 lg:mt-7 text-center lg:text-left">
               Establishing a community that encourages lifelong learning
             </h3>
-            <p className="text-[#697585] text-base font-semibold lg:w-[642px] w-100 leading-6 my-10">
+            {/* Description */}
+            <p className="text-[#697585] text-sm lg:text-base font-semibold lg:w-[642px] w-full leading-6 my-6 lg:my-10 text-center lg:text-left">
               It uses a dictionary of over 200 Latin words, combined with a
               handful of model sentence structures, to generate Lorem Ipsum
               which looks
             </p>
-            <Images imgSrc={aboutUsRight} className={"mx-auto"} />
-            <div className="flex lg:gap-x-[65px] gap-x-3 mt-12">
-              <div className="flex items-center lg:gap-x-3 gap-x-2">
-                <IoIosCheckmarkCircle className="text-primarys text-[20px] font-bold" />
-                <h4>Free Incoming method</h4>
+            <div className="w-full">
+              <Images imgSrc={aboutUsRight} className={"mx-auto lg:mx-0 max-w-full"} />
+            </div>
+            {/* Features List */}
+            <div className="grid grid-cols-2 gap-y-4 gap-x-2 mt-10">
+              <div className="flex items-center gap-x-2">
+                <IoIosCheckmarkCircle className="text-primarys text-[18px] lg:text-[20px] font-bold shrink-0" />
+                <h4 className="text-[13px] lg:text-base font-bold">Free Incoming method</h4>
               </div>
-              <div className="flex items-center lg:gap-x-3 gap-x-2">
-                <IoIosCheckmarkCircle className="text-secondarys text-[20px] font-bold" />
-                <h4>Provide Best Support</h4>
+              <div className="flex items-center gap-x-2">
+                <IoIosCheckmarkCircle className="text-secondarys text-[18px] lg:text-[20px] font-bold shrink-0" />
+                <h4 className="text-[13px] lg:text-base font-bold">Provide Best Support</h4>
+              </div>
+              <div className="flex items-center gap-x-2">
+                <IoIosCheckmarkCircle className="text-secondarys text-[18px] lg:text-[20px] font-bold shrink-0" />
+                <h4 className="text-[13px] lg:text-base font-bold">Expert Many Teacher</h4>
+              </div>
+              <div className="flex items-center gap-x-2">
+                <IoIosCheckmarkCircle className="text-primarys text-[18px] lg:text-[20px] font-bold shrink-0" />
+                <h4 className="text-[13px] lg:text-base font-bold">Lifetime access</h4>
               </div>
             </div>
-            <div className="flex lg:gap-x-[65px] gap-x-4 mt-1 pb-12.5">
-              <div className="flex items-center lg:gap-x-3 gap-x-2">
-                <IoIosCheckmarkCircle className="text-secondarys text-[20px] font-bold" />
-                <h4>Expert Many Teacher </h4>
-              </div>
-              <div className="flex items-center lg:gap-x-3 gap-x-2">
-                <IoIosCheckmarkCircle className="text-primarys text-[20px] font-bold " />
-                <h4>Lifetime access </h4>
-              </div>
+            {/* Button Section */}
+            <div className="mt-10 pb-12.5 flex justify-center lg:justify-start">
+              <Link to={"/"}>
+                <button className="btnTwo flex items-center gap-2">
+                  Try for free
+                  <FaArrowRight />
+                </button>
+              </Link>
             </div>
-            <Link to={"/"}>
-              {/* <div className=" bg-primarys/79 text-white text-[18px] font-bold rounded-md w-[178px] ">
-                <Button
-                  btnText={
-                    <>
-                      Try for fee
-                      <FaArrowRight />
-                    </>
-                  }
-                  className={
-                    "bg-primarys py-[19px] px-8 rounded-md w-[178px] clip-ss flex items-center gap-x-2"
-                  }
-                />
-              </div> */}
-              <button className="btnTwo">
-                Try for fee
-                <FaArrowRight />
-              </button>
-            </Link>
           </div>
         </Flex>
       </Container>
