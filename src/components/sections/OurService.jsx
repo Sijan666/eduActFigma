@@ -13,7 +13,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { useState } from "react"
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const OurService = () => {
   const [swiperRef, setSwiperRef] = useState(null);
@@ -93,7 +94,11 @@ const OurService = () => {
               </header>
               {/* Service Header End */}
               {/* Arrow Start */}
-              <Flex className={"gap-3.5 justify-center lg:justify-end pb-[30px] lg:pb-[43px] pt-10"}>
+              <Flex
+                className={
+                  "gap-3.5 justify-center lg:justify-end pb-[30px] lg:pb-[43px] pt-10"
+                }
+              >
                 <button
                   onClick={() => swiperRef?.slidePrev()}
                   className="h-10 w-10 bg-white rounded-sm flex justify-center items-center group hover:bg-primarys transition-all cursor-pointer duration-300"
@@ -127,76 +132,92 @@ const OurService = () => {
                   }}
                 >
                   <SwiperSlide>
-                    <ServiceCard
-                      serviceCardImage={serviceEducation}
-                      cardHeading={"Exclusive Coach"}
-                      cardContent={
-                        "Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit "
-                      }
-                    />
+                    <Link to={"/blog"}>
+                      <ServiceCard
+                        serviceCardImage={serviceEducation}
+                        cardHeading={"Exclusive Coach"}
+                        cardContent={
+                          "Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit "
+                        }
+                      />
+                    </Link>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <ServiceCard
-                      serviceCardImage={serviceBusiness}
-                      cardHeading={"Creative Minds"}
-                      cardContent={
-                        "Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit "
-                      }
-                    />
+                    <Link to={"/blog"}>
+                      <ServiceCard
+                        serviceCardImage={serviceBusiness}
+                        cardHeading={"Creative Minds"}
+                        cardContent={
+                          "Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit "
+                        }
+                      />
+                    </Link>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <ServiceCard
-                      serviceCardImage={serviceWebinar}
-                      cardHeading={"Video Tutorials"}
-                      cardContent={
-                        "Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit "
-                      }
-                    />
+                    <Link to={"/blog"}>
+                      <ServiceCard
+                        serviceCardImage={serviceWebinar}
+                        cardHeading={"Video Tutorials"}
+                        cardContent={
+                          "Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit "
+                        }
+                      />
+                    </Link>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <ServiceCard
-                      serviceCardImage={serviceNeural}
-                      cardHeading={"Worlds Record"}
-                      cardContent={
-                        "Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit "
-                      }
-                    />
+                    <Link to={"/blog"}>
+                      <ServiceCard
+                        serviceCardImage={serviceNeural}
+                        cardHeading={"Worlds Record"}
+                        cardContent={
+                          "Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit "
+                        }
+                      />
+                    </Link>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <ServiceCard
-                      serviceCardImage={serviceEducation}
-                      cardHeading={"Exclusive Coach"}
-                      cardContent={
-                        "Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit "
-                      }
-                    />
+                    <Link to={"/blog"}>
+                      <ServiceCard
+                        serviceCardImage={serviceEducation}
+                        cardHeading={"Exclusive Coach"}
+                        cardContent={
+                          "Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit "
+                        }
+                      />
+                    </Link>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <ServiceCard
-                      serviceCardImage={serviceBusiness}
-                      cardHeading={"Creative Minds"}
-                      cardContent={
-                        "Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit "
-                      }
-                    />
+                    <Link to={"/blog"}>
+                      <ServiceCard
+                        serviceCardImage={serviceBusiness}
+                        cardHeading={"Creative Minds"}
+                        cardContent={
+                          "Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit "
+                        }
+                      />
+                    </Link>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <ServiceCard
-                      serviceCardImage={serviceWebinar}
-                      cardHeading={"Video Tutorials"}
-                      cardContent={
-                        "Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit "
-                      }
-                    />
+                    <Link to={"/blog"}>
+                      <ServiceCard
+                        serviceCardImage={serviceWebinar}
+                        cardHeading={"Video Tutorials"}
+                        cardContent={
+                          "Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit "
+                        }
+                      />
+                    </Link>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <ServiceCard
-                      serviceCardImage={serviceNeural}
-                      cardHeading={"Worlds Record"}
-                      cardContent={
-                        "Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit "
-                      }
-                    />
+                    <Link to={"/blog"}>
+                      <ServiceCard
+                        serviceCardImage={serviceNeural}
+                        cardHeading={"Worlds Record"}
+                        cardContent={
+                          "Lorem ipsum dolor sit amet consectetur. Convallis ornare semper id hendrerit "
+                        }
+                      />
+                    </Link>
                   </SwiperSlide>
                 </Swiper>
               </Flex>
