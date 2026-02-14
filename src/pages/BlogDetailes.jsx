@@ -172,7 +172,8 @@ const BlogDetailes = () => {
                   placeholder="Write a Message"
                 ></textarea>
               </div>
-              <div className="bg-[#f58c37]  text-white text-[18px] font-bold rounded-md w-60">
+              {/* btn */}
+              {/* <div className="bg-[#f58c37]  text-white text-[18px] font-bold rounded-md w-60">
                 <Button
                   btnText={
                     <>
@@ -184,7 +185,12 @@ const BlogDetailes = () => {
                     "bg-secondarys py-[19px] px-8 rounded-md w-60 clip-ss flex items-center gap-x-2"
                   }
                 />
-              </div>
+              </div> */}
+              <button className="btn">
+                  Submit Comment
+                  <FaArrowRight />
+              </button>
+              {/* btn */}
             </div>
             {/* Form */}
           </div>

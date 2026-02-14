@@ -3,8 +3,8 @@ import Commonh4 from "../components/Commonh4"
 import Container from "../components/Container"
 import Commonh3 from "../components/Commonh3"
 import Flex from "../components/Flex"
-import Button from "../components/Button"
-import { FaArrowRight, FaArrowRightLong } from "react-icons/fa6"
+// import Button from "../components/Button"
+import { FaArrowRight } from "react-icons/fa6"
 import { FiMapPin } from "react-icons/fi"
 import { TfiEmail } from "react-icons/tfi"
 import { PiPhoneCall } from "react-icons/pi"
@@ -53,9 +53,13 @@ const Contact = () => {
               <textarea name="" placeholder="Write a Message" rows={5} cols={5} className="py-[25px] px-7.5 bg-[#F6F6F6] text-[#697585] text-base font-bold rounded-sm outline-none w-[868px]"></textarea>
             </Flex>
             {/* button */}
-            <div className="bg-[#f58c37] mx-auto text-white text-[18px] font-bold rounded-md w-[227px] mb-7.5">
+            {/* <div className="bg-[#f58c37] mx-auto text-white text-[18px] font-bold rounded-md w-[227px] mb-7.5">
               <Button btnText={<>Send a Message<FaArrowRight /></>}className={"bg-secondarys py-[19px] px-8 rounded-md w-[227px] clip-ss flex items-center gap-x-2"}/>
-            </div>
+            </div> */}
+            <button className="btn">
+                Send a Message
+                <FaArrowRight />
+            </button>
             {/* button */}
             {/* cart part */}
             <div className="">

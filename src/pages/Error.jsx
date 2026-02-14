@@ -4,7 +4,7 @@ import Images from '../components/Images'
 import error from '../../src/assets/error.png'
 import Commonh3 from '../components/Commonh3'
 import { LuSearch } from 'react-icons/lu'
-import { FaArrowRightLong } from 'react-icons/fa6'
+// import { FaArrowRightLong } from 'react-icons/fa6'
 import Button from '../components/Button'
 import { Link } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
@@ -39,9 +39,13 @@ const Error = () => {
                 </div>
                 {/* button */}
                 <Link to={'/'}>
-                <div className="bg-[#f58c37] text-white text-[18px] font-bold rounded-md w-51 mx-auto">
+                {/* <div className="bg-[#f58c37] text-white text-[18px] font-bold rounded-md w-51 mx-auto">
                     <Button btnText={<>Back to Home<FaArrowRight /></>}className={"bg-secondarys py-[19px] px-8 rounded-md w-51 clip-ss flex items-center gap-x-2"}/>
-                </div>
+                </div> */}
+                <button className="btn">
+                    Update
+                    <FaArrowRight />
+                </button>
                 </Link>
                 {/* button */}
             </Container>

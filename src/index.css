@@ -14,8 +14,21 @@
     --color-secondarys: #F57005;
 }
 
-.clip-ss {
-  clip-path: polygon(0 0, 96% 0, 81% 100%, 0 100%);
+/* .clip-ss {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.clip-ss:hover {
+  clip-path: polygon(0 100%, 85% 1%, 0 0);
+
+} */
+
+.btn{
+  @apply text-white font-bold text-[18px] flex items-center gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none bg-secondarys  duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-10  after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer hover:after:h-[500%] hover:after:rotate-0 hover:after:w-full after:duration-300 hover:after:-top-10
+}
+
+.btnTwo{
+  @apply text-white font-bold text-[18px] flex items-center gap-x-3 py-2 sm:py-4 px-5 sm:px-8 rounded-md bg-none bg-primarys  duration-300 relative after:w-1/5 after:h-[200%] after:bg-[#F6F5F521] z-0 after:-z-10  after:absolute after:top-0 after:right-0 overflow-hidden after:rotate-30 hover:cursor-pointer hover:after:h-[500%] hover:after:rotate-0 hover:after:w-full after:duration-300 hover:after:-top-10
 }
 
 @theme inline {

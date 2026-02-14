@@ -76,9 +76,14 @@ const TeacherDetails = () => {
                                 </Flex>
                             </div>
                             {/* btn */}
-                            <div className="bg-[#f58c37]  text-white text-[18px] font-bold rounded-md w-[178px]">
+                            {/* <div className="bg-[#f58c37]  text-white text-[18px] font-bold rounded-md w-[178px]">
                             <Button btnText={<>Get In Touch<FaArrowRight /></>}className={"bg-secondarys py-[19px] px-5 rounded-md clip-ss flex items-center gap-x-2"}/>
-                            </div>
+                            </div> */}
+                                <button className="btn">
+                                    Get In Touch
+                                    <FaArrowRight />
+                                </button>
+                                {/* btn */}
                         </div>
                     </Flex>
                 </Container>

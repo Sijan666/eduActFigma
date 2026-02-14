@@ -43,9 +43,15 @@ const Login = () => {
                                     </div>
                                     <p className='text-[#697585] text-base font-semibold'>Forget Password?</p>
                                 </div>
-                                <div className="bg-[#f58c37] text-white text-[18px] font-bold rounded-md w-27 mt-10">
+                                {/* btn */}
+                                {/* <div className="bg-[#f58c37] text-white text-[18px] font-bold rounded-md w-27 mt-10">
                                     <Button btnText={'Login'}className={"bg-secondarys py-5 px-8 rounded-md w-27 clip-ss flex items-center gap-x-2"}/>
-                                </div>
+                                </div> */}
+                                <button className="btn">
+                                    Login
+                                    <FaArrowRight />
+                                </button>
+                                {/* btn */}
                             </div>
                             {/* login */}
                             {/* border */}
@@ -64,9 +70,15 @@ const Login = () => {
                                     <input type="checkbox" name="" id="" />
                                     <p className='text-[#697585] text-base font-semibold'>I Accept Company Privacy Policy</p>
                                 </div>
-                                <div className="bg-[#f58c37] text-white text-[18px] font-bold rounded-md w-[130px] mt-10">
+                                {/* btn */}
+                                {/* <div className="bg-[#f58c37] text-white text-[18px] font-bold rounded-md w-[130px] mt-10">
                                     <Button btnText={'Register'}className={"bg-secondarys py-5 px-8 rounded-md w-[130px] clip-ss flex items-center gap-x-2"}/>
-                                </div>
+                                </div> */}
+                                <button className="btn">
+                                    Register
+                                    <FaArrowRight />
+                                </button>
+                                {/* btn */}
                             </div>
                             {/* register */}
                         </Flex>

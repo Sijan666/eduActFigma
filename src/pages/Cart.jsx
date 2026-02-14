@@ -4,7 +4,6 @@ import Images from '@/components/Images'
 import React, { useState } from 'react'
 import productCart from '../../src/assets/productinCart.png'
 import { FiMinus, FiPlus } from 'react-icons/fi'
-import { RxCross1 } from 'react-icons/rx'
 import { ImCross } from 'react-icons/im'
 import Button from '@/components/Button'
 import { FaArrowRight } from 'react-icons/fa'
@@ -154,12 +153,24 @@ const Cart = () => {
                         <Flex className={'justify-end pt-5'}>
                             <div className="w-full lg:w-auto">
                                 <Flex className={'gap-x-5 flex-col sm:flex-row gap-y-4 sm:gap-y-0'}>
-                                    <div className="bg-primaryTwo/80 text-white text-[18px] font-bold rounded-md w-full sm:w-40">
+                                    {/* btn two */}
+                                    {/* <div className="bg-primaryTwo/80 text-white text-[18px] font-bold rounded-md w-full sm:w-40">
                                         <Button btnText={<>Update<FaArrowRight /></>}className={"bg-primaryTwo py-[19px] px-8 rounded-md w-full sm:w-40 clip-ss flex justify-center items-center gap-x-2"}/>
-                                    </div>
-                                    <div className="bg-[#f58c37] text-white text-[18px] font-bold rounded-md w-full sm:w-[180px]">
+                                    </div> */}
+                                    <button className="btnTwo">
+                                        Update
+                                        <FaArrowRight />
+                                    </button>
+                                    {/* btn two */}
+                                    {/* btn one */}
+                                    {/* <div className="bg-[#f58c37] text-white text-[18px] font-bold rounded-md w-full sm:w-[180px]">
                                         <Button btnText={<>Checkout<FaArrowRight /></>}className={"bg-secondarys py-[19px] px-8 rounded-md w-full sm:w-[180px] clip-ss flex justify-center items-center gap-x-2"}/>
-                                    </div>
+                                    </div> */}
+                                    <button className="btn">
+                                        Checkout
+                                        <FaArrowRight />
+                                    </button>
+                                    {/* btn one */}
                                 </Flex>
                             </div>
                         </Flex>

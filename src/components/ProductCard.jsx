@@ -15,7 +15,7 @@ const ProductCard = ({className , productImg , productTitle ,productofferPrice ,
                 <div className="pb-6">
                     <Images imgSrc={productRating} className={'mx-auto'}/>
                 </div>
-                <div className="btn mx-auto w-[149px]">
+                <div className="btns mx-auto w-[149px]">
                     <Button btnText={'Add to Cart'} className={'px-8 py-[14.5px] text-[#697585] font-bold text-base bg-[#F6F6F6] rounded-md group-hover:bg-secondarys group-hover:text-white'}/>
                 </div>
             </div>

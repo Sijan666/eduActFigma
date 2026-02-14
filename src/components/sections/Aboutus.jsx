@@ -53,7 +53,7 @@ const Aboutus = () => {
               </div>
             </div>
             <Link to={"/"}>
-              <div className=" bg-primarys/79 text-white text-[18px] font-bold rounded-md w-[178px] ">
+              {/* <div className=" bg-primarys/79 text-white text-[18px] font-bold rounded-md w-[178px] ">
                 <Button
                   btnText={
                     <>
@@ -65,7 +65,11 @@ const Aboutus = () => {
                     "bg-primarys py-[19px] px-8 rounded-md w-[178px] clip-ss flex items-center gap-x-2"
                   }
                 />
-              </div>
+              </div> */}
+              <button className="btnTwo">
+                Try for fee
+                <FaArrowRight />
+              </button>
             </Link>
           </div>
         </Flex>

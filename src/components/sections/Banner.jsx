@@ -15,7 +15,7 @@ const Banner = () => {
           predefined chunks as necessary,
         </p>
         <Link to={"/"}>
-          <div className="bg-[#f58c37]  text-white text-[18px] font-bold rounded-md w-[178px]">
+          {/* <div className="bg-[#f58c37]  text-white text-[18px] font-bold rounded-md w-[178px]">
             <Button
               btnText={
                 <>
@@ -27,7 +27,11 @@ const Banner = () => {
                 "bg-secondarys py-[19px] px-8 rounded-md w-[178px] clip-ss flex items-center gap-x-2"
               }
             />
-          </div>
+          </div> */}
+          <button className="btn">
+            Try for fee
+            <FaArrowRight />
+          </button>
         </Link>
       </Container>
     </div>

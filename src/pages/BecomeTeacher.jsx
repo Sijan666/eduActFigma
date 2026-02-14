@@ -69,9 +69,13 @@ const BecomeTeacher = () => {
                                 <input type="number" placeholder='Phone Number' className='px-7.5 py-[25px] bg-[#F6F6F6] text-[#697585] text-base font-semibold w-full outline-none rounded-sm mb-7.5'/>
                                 <textarea name="" id="" rows={5} cols={5} placeholder='Comment' className='px-7.5 py-[25px] bg-[#F6F6F6] text-[#697585] text-base font-semibold w-full outline-none rounded-sm mb-7.5'></textarea>
                                 {/* button */}
-                                <div className="bg-[#f58c37] text-white text-[18px] font-bold rounded-md w-[238px]">
+                                {/* <div className="bg-[#f58c37] text-white text-[18px] font-bold rounded-md w-[238px]">
                                     <Button btnText={<>Become a Techer<FaArrowRight /></>}className={"bg-secondarys py-[19px] px-8 rounded-md w-[238px] clip-ss flex items-center gap-x-2"}/>
-                                </div>
+                                </div> */}
+                                <button className="btn">
+                                    Become a Techer
+                                    <FaArrowRight />
+                                </button>
                                 {/* button */}
                             </div>
                         </div>
