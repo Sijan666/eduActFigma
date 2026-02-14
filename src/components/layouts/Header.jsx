@@ -56,7 +56,7 @@ const Header = () => {
 
                 {/* Dropdown */}
                 <div
-                  className={`rounded-2xl px-5 py-4 absolute top-12 -left-10 shadow-lg w-52 bg-white z-50 transition-all duration-300
+                  className={`rounded-2xl px-5 py-4 absolute top-12 -left-10 shadow-newMade w-52 bg-white z-50 transition-all duration-300
                   ${dropshow ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-5"}`}
                 >
                   <ul className="flex flex-col gap-y-4 text-sm font-medium">
