@@ -16,7 +16,7 @@ const Discover = () => {
                     {/* <div className="bg-[#f58c37]  text-white text-[18px] font-bold rounded-md w-52 mx-auto lg:mx-0">
                     <Button btnText={<>Discover More<FaArrowRight /></>}className={"bg-secondarys py-[19px] px-8 rounded-md w-52 clip-ss flex items-center gap-x-2"}/>
                     </div> */}
-                    <button className="btn">
+                    <button className="btn mx-auto lg:mx-0">
                         Discover More
                         <FaArrowRight />
                     </button>
