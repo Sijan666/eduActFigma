@@ -29,7 +29,7 @@ const Coursepage = () => {
         <div className="py-30">
           <Container>
             {/* course card part */}
-            <div className="pt-20 flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 lg:justify-between items-center relative">
+            <div className="pt-20 flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 lg:justify-between items-center relative z-1">
               <CourseCard
                 className={"lg:w-1/3"}
                 courseTime={"20 Hours"}
@@ -60,9 +60,14 @@ const Coursepage = () => {
                 price={"$473.00"}
                 lessons={"15 Lessons"}
               />
-              <Images imgSrc={paper} className={"absolute top-60 -right-50"} />
+              <Images
+                imgSrc={paper}
+                className={
+                  "absolute lg:top-60 lg:-right-60 hidden lg:block"
+                }
+              />
             </div>
-            <div className="pt-20 flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 lg:justify-between items-center relative">
+            <div className="pt-20 flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 lg:justify-between items-center relative z-1">
               <CourseCard
                 className={"lg:w-1/3"}
                 courseTime={"20 Hours"}
@@ -93,7 +98,12 @@ const Coursepage = () => {
                 price={"$473.00"}
                 lessons={"15 Lessons"}
               />
-              <Images imgSrc={plane} className={"absolute top-60 -left-60"} />
+              <Images
+                imgSrc={plane}
+                className={
+                  "absolute lg:top-60 lg:-left-60 hidden lg:block"
+                }
+              />
             </div>
             {/* Pagination */}
             <Flex className="mx-auto mt-[60px] gap-x-4 justify-center">
