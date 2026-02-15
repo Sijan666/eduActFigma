@@ -22,6 +22,7 @@ const CourseCard = ({className , courseTime, courseRating , courseTitle , insNam
             </div>
             {/* children div */}
             <div className="p-7.5 mt-80">
+                {/* time */}
                 <p className='px-2.5 py-[7px] text-white rounded-[5px] font-semibold text-[14px] bg-primaryTwo inline-block'>{courseTime}</p>
                 {/* image */}
                 <div className="py-5">
