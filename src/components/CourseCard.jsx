@@ -20,6 +20,7 @@ const CourseCard = ({className , courseTime, courseRating , courseTitle , insNam
                     <GoHeartFill onClick={handleLike} className={`text-[20px] lg:text-[25px] cursor-pointer duration-300 ${isLiked ? 'text-primaryTwo' : 'text-white'}`}/>
                 </button>
             </div>
+            {/* children div */}
             <div className="p-7.5 mt-80">
                 <p className='px-2.5 py-[7px] text-white rounded-[5px] font-semibold text-[14px] bg-primaryTwo inline-block'>{courseTime}</p>
                 <div className="py-5">
