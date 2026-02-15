@@ -37,6 +37,7 @@ const Course = () => {
                             price={'$473.00'}
                             lessons={'15 Lessons'}
                         />
+                        {/* 2nd card */}
                         <CourseCard 
                             className={'lg:w-1/3'}
                             courseTime={'20 Hours'}
