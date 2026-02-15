@@ -10,7 +10,9 @@ const CourseCard = ({className , courseTime, courseRating , courseTitle , insNam
     };
     return (
         <>
+        {/* parent div */}
         <div className={` ${className} w-full max-w-[416px] rounded-[14px] overflow-hidden shadow-newMade group bg-white`}>
+            {/* relative */}
             <div className="relative">
                 <div className="w-full h-[300px] bg-[#152B4A] rounded-bl-[50%] rounded-br-[50%] absolute z-1 top-0 left-0"></div>
                 <div className="w-[94%] h-[318px] bg-secondarys rounded-bl-[50%] rounded-br-[50%] absolute top-0 left-1/2 -translate-x-1/2 group-hover:bg-primarys duration-300"></div>
