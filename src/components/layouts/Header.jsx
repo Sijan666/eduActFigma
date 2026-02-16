@@ -104,7 +104,6 @@ const Header = () => {
                   </ul>
                 </div>
               </li>
-
               <li>
                 <Link to={"/blog"}>Blog</Link>
               </li>
@@ -113,16 +112,14 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-
-          {/* Mobile Device Icon */}
+          {/* Mobile Icon */}
           <div
             className="block lg:hidden text-3xl text-primaryTwo cursor-pointer"
             onClick={() => setshow(!show)}
           >
             <CgMenuRight />
           </div>
-
-          {/* Mobile Menu Content */}
+          {/* Mobile Menu */}
           <nav
             className={`absolute left-1/2 lg:hidden backdrop-blur-lg border-2 border-gray-300 rounded-3xl p-5 w-[90%] -translate-x-1/2 text-center 
             transition-all duration-400 ease-in-out z-50 
@@ -172,8 +169,7 @@ const Header = () => {
               </Link>
             </div>
           </nav>
-
-          {/* Search & User Desktop */}
+          {/* Search & User */}
           <Flex
             className={
               "gap-x-3 text-primaryTwo text-xl hidden lg:flex ml-auto items-center"
@@ -186,8 +182,7 @@ const Header = () => {
               <FaRegUser />
             </Link>
           </Flex>
-
-          {/* Contact Button Desktop */}
+          {/* Contact Button */}
           <div className="bg-primarys py-4 pl-4 pr-10 rounded-tl-full rounded-bl-full ml-10 hidden lg:block">
             <Link to={"/contact"}>
               <Flex className={"gap-x-4 items-center"}>
