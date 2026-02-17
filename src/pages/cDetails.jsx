@@ -18,7 +18,6 @@ import Button from "@/components/Button";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Cdetails = () => {
-  // State to track active tab (Default is 'overview')
   const [activeTab, setActiveTab] = useState('overview');
 
   return (
