@@ -18,7 +18,7 @@ import Faq from "./pages/Faq";
 import About from "./pages/About";
 import ProductDetails from "./pages/ProductDetails";
 import Coursepage from "./pages/Coursepage";
-import Cdetails from "./pages/cDetails";
+import Cdetails from "./pages/Cdetails";
 
 function App() {
   return (
