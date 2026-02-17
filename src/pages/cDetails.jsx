@@ -13,7 +13,7 @@ import { HiLightBulb } from "react-icons/hi";
 import { LiaLanguageSolid } from "react-icons/lia";
 import { FaArrowRight, FaStar } from "react-icons/fa";
 import { MdOutlineWatchLater } from "react-icons/md";
-import reviewImg from '../../src/assets/reviewImg.png'
+import reviewImg from '../../src/assets/reviewimg.png'
 import Button from "@/components/Button";
 import { FaArrowRightLong } from "react-icons/fa6";
 
