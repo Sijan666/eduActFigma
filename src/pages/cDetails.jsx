@@ -21,7 +21,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 import cdImg from '../assets/cdImg.png'
 import Rating from '../assets/Rating.png'
-import reviewimg from '../assets/reviewimg.png'
+import reviewImg from '../../src/assets/reviewImg.png'
 // Fixed image import issue
 
 
@@ -222,7 +222,7 @@ const Cdetails = () => {
                 </p>
                 <div className="pt-[60px] pb-20">
                   <div className="pb-[60px] border-b border-[#E4E4E4] flex flex-wrap lg:flex-nowrap justify-center lg:justify-normal items-center gap-[30px]">
-                    <Images imgSrc={reviewimg} />
+                    <Images imgSrc={reviewImg} />
                     <div className="">
                       <div className="flex justify-between mb-5">
                         <div className="">
@@ -244,7 +244,7 @@ const Cdetails = () => {
                     </div>
                   </div>
                   <div className="py-15 border-b border-[#E4E4E4] flex flex-wrap lg:flex-nowrap justify-center lg:justify-normal items-center gap-[30px]">
-                    <Images imgSrc={reviewimg} />
+                    <Images imgSrc={reviewImg} />
                     <div className="">
                       <div className="flex justify-between mb-5">
                         <div className="">
