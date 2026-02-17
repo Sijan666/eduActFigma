@@ -17,9 +17,9 @@ import { FaArrowRightLong } from "react-icons/fa6";
 // img
 import cdImg from '../../src/assets/cdImg.png'
 import Rating from '../../src/assets/Rating.png'
-// import reviewImg from '../../src/assets/reviewimg.png'
+import reviewimg from '../../src/assets/reviewimg.png'
 
-import reviewImg from '../assets/reviewimg.png'
+
 
 
 
@@ -220,7 +220,7 @@ const Cdetails = () => {
                 </p>
                 <div className="pt-[60px] pb-20">
                   <div className="pb-[60px] border-b border-[#E4E4E4] flex flex-wrap lg:flex-nowrap justify-center lg:justify-normal items-center gap-[30px]">
-                    <Images imgSrc={reviewImg} />
+                    <Images imgSrc={reviewimg} />
                     <div className="">
                       <div className="flex justify-between mb-5">
                         <div className="">
@@ -242,7 +242,7 @@ const Cdetails = () => {
                     </div>
                   </div>
                   <div className="py-15 border-b border-[#E4E4E4] flex flex-wrap lg:flex-nowrap justify-center lg:justify-normal items-center gap-[30px]">
-                    <Images imgSrc={reviewImg} />
+                    <Images imgSrc={reviewimg} />
                     <div className="">
                       <div className="flex justify-between mb-5">
                         <div className="">
