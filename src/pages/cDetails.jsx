@@ -15,11 +15,13 @@ import { FaArrowRight, FaStar } from "react-icons/fa";
 import { MdOutlineWatchLater } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
 // img
-import cdImg from '../../src/assets/cdImg.png'
-import Rating from '../../src/assets/Rating.png'
-import reviewimg from '../../src/assets/reviewimg.png'
+// import cdImg from '../../src/assets/cdImg.png'
+// import Rating from '../../src/assets/Rating.png'
+// import reviewimg from '../../src/assets/reviewimg.png'
 
-
+import cdImg from '../assets/cdImg.png'
+import Rating from '../assets/Rating.png'
+import reviewimg from '../assets/reviewimg.png'
 
 
 
