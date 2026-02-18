@@ -40,7 +40,7 @@ const Header = () => {
               <li>
                 <Link to={"/coursePage"}>Courses</Link>
               </li>
-              {/* Pages Dropdown Parent */}
+              {/* Dropdown */}
               <li
                 className="relative cursor-pointer select-none"
                 onClick={handelClick}
@@ -51,17 +51,18 @@ const Header = () => {
                     className={`transition-all ${dropshow ? "rotate-180" : ""}`}
                   />
                 </div>
-                {/* Dropdown */}
+                {/* Dropdown (Desktop) */}
                 <div
                   className={`rounded-2xl px-5 py-4 absolute top-12 -left-10 shadow-newMade w-52 bg-white z-50 transition-all duration-300
-                  ${dropshow ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-5"}`}
+                  ${
+                    dropshow
+                      ? "opacity-100 visible translate-y-0"
+                      : "opacity-0 invisible -translate-y-5"
+                  }`}
                 >
                   <ul className="flex flex-col gap-y-4 text-sm font-medium">
                     <li>
-                      <Link
-                        to={"/becomeTeacher"}
-                        className="hover:text-primarys"
-                      >
+                      <Link to={"/becomeTeacher"} className="hover:text-primarys">
                         Become Teacher
                       </Link>
                     </li>
@@ -140,14 +141,34 @@ const Header = () => {
               <li>
                 <Link to={"/coursePage"}>Courses</Link>
               </li>
-              <li>
-                <Link
-                  to={"/"}
-                  className="flex items-center gap-x-1 justify-center"
+              {/* Pages Dropdown Mobile */}
+              <li className="flex flex-col items-center justify-center">
+                <div 
+                  className="flex items-center gap-x-1 justify-center cursor-pointer select-none"
+                  onClick={handelClick}
                 >
-                  Pages <FaAngleDown />
-                </Link>
+                  Pages <FaAngleDown className={`transition-all duration-300 ${dropshow ? "rotate-180" : ""}`} />
+                </div>
+                {/* Mobile Dropdown Start */}
+                <div className={`overflow-hidden transition-all duration-500 ease-in-out ${dropshow ? "max-h-[500px] mt-4 opacity-100 w-full" : "max-h-0 opacity-0 w-full"}`}>
+                  <ul className="flex flex-col gap-y-4 font-bold text-sm bg-white/50 p-4 rounded-xl shadow-sm">
+                      <li><Link to={"/becomeTeacher"}>Become Teacher</Link></li>
+                      <li><Link to={"/blogDetailes"}>Blog Details</Link></li>
+                      <li><Link to={"/blogSidebar"}>Blog Sidebar</Link></li>
+                      <li><Link to={"/cart"}>Cart</Link></li>
+                      <li><Link to={"/checkout"}>Checkout</Link></li>
+                      <li><Link to={"/coursePage"}>Course Page</Link></li>
+                      <li><Link to={"/faq"}>Faq</Link></li>
+                      <li><Link to={"/gallery"}>Gallery</Link></li>
+                      <li><Link to={"/product"}>Product</Link></li>
+                      <li><Link to={"/productDetails"}>Product Details</Link></li>
+                      <li><Link to={"/teacher"}>Teacher</Link></li>
+                      <li><Link to={"/teacherDetails"}>Teacher Details</Link></li>
+                      <li><Link to={"/cdetails"}>Course Details</Link></li>
+                  </ul>
+                </div>
               </li>
+              {/* Mobile Dropdown End */}
               <li>
                 <Link to={"/blog"}>Blog</Link>
               </li>
