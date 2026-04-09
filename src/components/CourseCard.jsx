@@ -15,13 +15,13 @@ const CourseCard = ({className , courseTime, courseRating , courseTitle , insNam
             {/* relative */}
             <div className="relative">
                 <div className="w-full h-[300px] bg-[#152B4A] rounded-bl-[50%] rounded-br-[50%] absolute z-1 top-0 left-0"></div>
-                <div className="w-[94%] h-[318px] bg-secondarys rounded-bl-[50%] rounded-br-[50%] absolute top-0 left-1/2 -translate-x-1/2 group-hover:bg-primarys duration-300"></div>
+                <div className="w-[99%] h-[318px] bg-secondarys rounded-bl-[50%] rounded-br-[50%] absolute top-0 left-1/2 -translate-x-1/2 group-hover:bg-primarys duration-300"></div>
                 <button className="p-4 bg-secondarys rounded-full z-10 absolute top-5 left-5">
                     <GoHeartFill onClick={handleLike} className={`text-[20px] lg:text-[25px] cursor-pointer duration-300 ${isLiked ? 'text-primaryTwo' : 'text-white'}`}/>
                 </button>
             </div>
             {/* children div */}
-            <div className="p-7.5 mt-80">
+            <div className="lg:p-7.5 p-4 mt-80">
                 {/* time */}
                 <p className='px-2.5 py-[7px] text-white rounded-[5px] font-semibold text-[14px] bg-primaryTwo inline-block'>{courseTime}</p>
                 {/* image */}
