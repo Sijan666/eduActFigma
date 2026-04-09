@@ -13,7 +13,7 @@ const Aboutus = () => {
   return (
     <div className="aboutUs lg:my-30 my-15">
       {/* Container */}
-      <Container className="w-[390px] lg:w-330 mx-auto">
+      <Container>
         <Flex className={"gap-x-[65px] flex flex-wrap lg:flex-nowrap items-center justify-center"}>
           {/* Image Section */}
           <div className="w-full lg:w-auto flex justify-center">

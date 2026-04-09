@@ -10,7 +10,7 @@ const OurCategories = () => {
         <>
         <section className='ourCategory'>
             <div className="bg-[url('/src/assets/categoryBg.png')] bg-center bg-cover bg-no-repeat py-30">
-                <Container className={'w-[395px] lg:w-330'}>
+                <Container>
                     {/* common text part */}
                     <div className="text-center pb-20">
                         <div className='gap-x-[15px] items-center flex justify-center'>

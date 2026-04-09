@@ -11,9 +11,9 @@ const Course = () => {
         <>
         <section className='ourCategory'>
             <div className="py-20">
-                <Container className={'w-[390px] lg:w-330 mx-auto'}>
+                <Container>
                     {/* common text part */}
-                    <div className="text-center pb-20">
+                    <div className="text-center lg:pb-20">
                         <div className='gap-x-[15px] items-center flex justify-center'>
                             <Commonh4 commonh4={'Popular Course'} className={'text-primarys '}/>
                             <div className="flex items-center text-secondarys text-[20px]">
