@@ -124,7 +124,7 @@ const Header = () => {
           <nav
             className={`absolute left-1/2 lg:hidden backdrop-blur-lg border-2 border-gray-300 rounded-3xl p-5 w-[90%] -translate-x-1/2 text-center 
             transition-all duration-400 ease-in-out z-50 
-            ${show ? "top-24 opacity-100 visible" : "top-20 opacity-0 invisible"}`}
+            ${show ? "top-22 opacity-100 visible" : "top-20 opacity-0 invisible"}`}
           >
             <ul className="flex-col flex gap-y-5 font-semibold text-primaryTwo text-base text-center">
               <li>
@@ -177,7 +177,7 @@ const Header = () => {
               </li>
             </ul>
             <div className="bg-primarys py-4 px-4 mt-5 rounded-full w-full max-w-[250px] mx-auto">
-              <Link to={"/"}>
+              <Link to={"/contact"}>
                 <Flex className={"gap-x-4 items-center justify-center"}>
                   <div className="text-primarys bg-white text-[24px] p-2 rounded-full">
                     <FiPhoneCall />
