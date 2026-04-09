@@ -16,12 +16,12 @@ const BlogDetailes = () => {
     <>
       {/* Header part */}
       <div className="lg:pt-[174px] lg:pb-36 py-15 lg:py-25 bg-black text-center text-white">
-        <Container className="w-[390px] lg:w-330 mx-auto">
+        <Container>
           <h3 className="font-bold text-[32px] lg:text-[50px] uppercase">Blog Details</h3>
           <p className="text-lg lg:text-xl pt-4">Home / Blog</p>
         </Container>
       </div>
-      <Container className="w-[390px] lg:w-330 mx-auto">
+      <Container>
         <Flex className={"flex-col lg:flex-row justify-between items-start mt-10 lg:mt-30 mb-20 lg:mb-[150px] gap-y-10"}>
           {/* Content Area */}
           <div className="w-full lg:w-[868px]">
