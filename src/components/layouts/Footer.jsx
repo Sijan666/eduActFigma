@@ -14,9 +14,9 @@ const Footer = () => {
       <footer>
         <div className="bg-[url('/src/assets/footerBg.png')] py-30 bg-center bg-cover bg-no-repeat">
           <Container>
-            <Flex className={'lg:justify-between items-start! flex-wrap gap-y-5 lg:flex-nowrap '}>
+            <div className={'grid lg:grid-cols-4 grid-cols-1 items gap-6'}>
               {/* 1st line */}
-              <div className="first lg:mx-0 mx-auto">
+              <div className="first lg:mx-0 mx-auto lg:w-[320px]">
                 <Images imgSrc={footerLogo}/>
                 <div className="pt-7.5">
                   {/* address */}
@@ -54,7 +54,7 @@ const Footer = () => {
                 </div>
               </div>
               {/* 2nd line */}
-              <div className="second pt-5 lg:pt-0 pr-15 lg:pr-0 lg:mx-0 mx-auto">
+              <div className="second pt-5 lg:pt-0 lg:mx-0 mx-auto lg:w-[141px]">
                 <h3 className="text-[24px] font-semibold text-white">Quick Links</h3>
                 <div className="pt-7.5">
                   <ul className="flex flex-col gap-y-3">
@@ -67,7 +67,7 @@ const Footer = () => {
                 </div>
               </div>
               {/* 3rd line */}
-              <div className="third pt-5 lg:pt-0 lg:mx-0 mx-auto">
+              <div className="third pt-5 lg:pt-0 lg:mx-0 mx-auto lg:w-[138px]">
                 <h3 className="text-[24px] font-semibold text-white">Explore</h3>
                 <div className="pt-7.5">
                   <ul className="flex flex-col gap-y-3">
@@ -84,19 +84,17 @@ const Footer = () => {
               <div className="fourth lg:mx-0 mx-auto">
                 <h3 className="text-[24px] font-semibold text-white">Gallery</h3>
                 <div className="pt-7.5">
-                  <Flex className={'justify-between gap-x-4'}>
+                  <div className={'grid grid-cols-3 gap-4 '}>
                     <Images imgSrc={f1}/>
                     <Images imgSrc={f1}/>
                     <Images imgSrc={f1}/>
-                  </Flex>
-                  <Flex className={'justify-between gap-x-4 pt-4'}>
                     <Images imgSrc={f1}/>
                     <Images imgSrc={f1}/>
                     <Images imgSrc={f1}/>
-                  </Flex>
+                  </div>
                 </div>
               </div>
-            </Flex>
+            </div>
           </Container>
         </div>
         {/* footer bottom copyright section */}
