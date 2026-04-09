@@ -12,14 +12,14 @@ const BlogSidebar = () => {
     <>
       {/* Header part */}
       <div className="lg:pt-[174px] lg:pb-36 py-16 bg-black text-center text-white">
-        <Container className="w-[390px] lg:w-330 mx-auto">
+        <Container>
           <h3 className="font-bold text-[32px] lg:text-[50px] uppercase">Blog Sidebar</h3>
           <p className="text-lg lg:text-xl pt-4">Home / Blog</p>
         </Container>
       </div>
       {/* Header part */}
       {/* Product part */}
-      <Container className="w-[390px] lg:w-330 mx-auto py-30">
+      <Container className="py-30">
         <Flex className={"flex-col lg:flex-row justify-between items-start gap-y-10"}>
           {/* Left Side: Blog Cards */}
           <div className="flex-col gap-y-9 flex w-full lg:w-auto">

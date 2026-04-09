@@ -5,7 +5,7 @@ import { MdOutlineWatchLater } from "react-icons/md";
 const BlogCardLg = () => {
   return (
     <div className="bg-[#152B4A] lg:h-[450px] h-[400px] lg:w-[868px] rounded-[14px] relative group mb-65 w-[90%] mx-auto lg:mx-0">
-      <div className="absolute lg:w-[788px] w-[300px] bg-white -bottom-65 left-1/2 -translate-x-1/2 shadow-newMade p-7 rounded-tl-[10px] rounded-tr-[10px] rounded-bl-[50px] rounded-br-[50px]">
+      <div className="absolute lg:w-[788px] w-[300px] bg-white -bottom-65 left-1/2 -translate-x-1/2 shadow-newMade lg:p-7 p-4 rounded-tl-[10px] rounded-tr-[10px] rounded-bl-[50px] rounded-br-[50px]">
         <Flex className={"gap-x-5"}>
           <p className="text-sm text-white bg-primarys font-semibold py-2 px-2.5 rounded-[5px]">
             Development
