@@ -26,7 +26,7 @@ const Checkout = () => {
                 </Container>
             </div>
             <Container className="py-30">
-                <p className='font-medium text-primaryTwo lg:text-[18px] text-[25px] py-10 px-12.5 bg-[#F6F6F6]  rounded-[14px] lg:w-[643px]'>Have a coupon? <span className='cursor-pointer font-bold text-secondarys'>Click here to enter your code</span></p>
+                <p className='font-medium text-primaryTwo lg:text-[18px] text-[25px] py-10 lg:px-12.5 px-8 bg-[#F6F6F6]  rounded-[14px] lg:w-[643px]'>Have a coupon? <span className='cursor-pointer font-bold text-secondarys'>Click here to enter your code</span></p>
                 <Flex className={'lg:justify-between flex-wrap lg:flex-nowrap gap-x-9 lg:items-start!'}>
                     {/* left side */}
                     <div className="left">
@@ -35,43 +35,43 @@ const Checkout = () => {
                             <h4 className='text-[32px] font-bold text-primaryTwo pb-10'>Billing Details</h4>
                             <div className="flex flex-col lg:flex-row lg:justify-between">
                                 <div className="name pb-5">
-                                    <input type="text" placeholder='First Name' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-[350px] lg:w-[311px] bg-[#F6F6F6] outline-none'/>
+                                    <input type="text" placeholder='First Name' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-[295px] lg:w-[311px] bg-[#F6F6F6] outline-none'/>
                                 </div>
                                 <div className="pass pb-7.5">
-                                    <input type="text" placeholder='Last Name' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-[350px] lg:w-[311px] bg-[#F6F6F6] outline-none'/>
+                                    <input type="text" placeholder='Last Name' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-full lg:w-[311px] bg-[#F6F6F6] outline-none'/>
                                 </div>
                             </div>
                             <div className="flex flex-col lg:flex-row lg:justify-between">
                                 <div className="email pb-5">
-                                    <input type="email" placeholder='Email Address' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-[350px] lg:w-[311px] bg-[#F6F6F6] outline-none'/>
+                                    <input type="email" placeholder='Email Address' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-full lg:w-[311px] bg-[#F6F6F6] outline-none'/>
                                 </div>
                                 <div className="number pb-7.5">
-                                    <input type="number" placeholder='Phone Number' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-[350px] lg:w-[311px] bg-[#F6F6F6] outline-none'/>
+                                    <input type="number" placeholder='Phone Number' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-full lg:w-[311px] bg-[#F6F6F6] outline-none'/>
                                 </div>
                             </div>
                             <div className="company pb-7.5">
-                                <input type="text" placeholder='Company' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-[350px] lg:w-[642px] bg-[#F6F6F6] outline-none'/>
+                                <input type="text" placeholder='Company' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-full lg:w-[642px] bg-[#F6F6F6] outline-none'/>
                             </div>
                             <div className="address pb-7.5">
-                                <input type="text" placeholder='Address' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-[350px] lg:w-[642px] bg-[#F6F6F6] outline-none'/>
+                                <input type="text" placeholder='Address' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-full lg:w-[642px] bg-[#F6F6F6] outline-none'/>
                             </div>
                             <div className="apartment pb-7.5">
-                                <input type="text" placeholder='Apartment, Unit, etc(optional)' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold lg:w-[642px] w-[350px] bg-[#F6F6F6] outline-none'/>
+                                <input type="text" placeholder='Apartment, Unit, etc(optional)' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold lg:w-[642px] w-full bg-[#F6F6F6] outline-none'/>
                             </div>
                             <div className="flex flex-col lg:flex-row lg:justify-between">
                                 <div className="town pb-5">
-                                    <input type="text" placeholder='Town/City' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-[350px] lg:w-[311px] bg-[#F6F6F6] outline-none'/>
+                                    <input type="text" placeholder='Town/City' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-full lg:w-[311px] bg-[#F6F6F6] outline-none'/>
                                 </div>
                                 <div className="state pb-7.5">
-                                    <input type="text" placeholder='State' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-[350px] lg:w-[311px] bg-[#F6F6F6] outline-none'/>
+                                    <input type="text" placeholder='State' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-full lg:w-[311px] bg-[#F6F6F6] outline-none'/>
                                 </div>
                             </div>
                             <div className="flex flex-col lg:flex-row lg:justify-between">
                                 <div className="town pb-5">
-                                    <input type="number" placeholder='Zip code' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-[350px] lg:w-[311px] bg-[#F6F6F6] outline-none'/>
+                                    <input type="number" placeholder='Zip code' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-full lg:w-[311px] bg-[#F6F6F6] outline-none'/>
                                 </div>
                                 <div className="state pb-7.5">
-                                    <input type="text" placeholder='Country' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-[350px] lg:w-[311px] bg-[#F6F6F6] outline-none'/>
+                                    <input type="text" placeholder='Country' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-full lg:w-[311px] bg-[#F6F6F6] outline-none'/>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +111,7 @@ const Checkout = () => {
                     {/* right side */}
                     <div className="right">
                         <h4 className='text-[32px] font-bold text-primaryTwo pb-10 mt-15'>Additional Information</h4>
-                        <textarea name="" id="" rows={5} cols={5} className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-[350px] lg:w-[642px] bg-[#F6F6F6] outline-none' placeholder='Write a Message'></textarea>
+                        <textarea name="" id="" rows={5} cols={5} className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold w-full lg:w-[642px] bg-[#F6F6F6] outline-none' placeholder='Write a Message'></textarea>
                         <div className="lg:pt-[950px] pt-10">
                             <div className="rounded-[14px] bg-[#F6F6F6] p-10">
                                 <div className="flex gap-x-5 items-start! pb-10">
