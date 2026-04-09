@@ -68,7 +68,7 @@ const Cdetails = () => {
                 <h3 className="text-[32px] font-bold text-primaryTwo pb-10">The Complete Web Developer Guideline 2023</h3>
                 {/* Tab Buttons */}
                 <div className="lg:p-[15px] p-2.5 bg-[#F6F6F6] rounded-[14px]">
-                  <Flex className={'lg:gap-x-5 justify-between lg:justify-normal'}>
+                  <div className={'grid lg:grid-cols-4 gap-5 grid-cols-2'}>
                     <button 
                       onClick={() => setActiveTab('overview')} 
                       className={`lg:px-4 lg:py-[19px] px-2 py-2 rounded-[10px] text-base font-semibold duration-300 cursor-pointer ${activeTab === 'overview' ? 'bg-secondarys text-white' : 'bg-white text-primaryTwo hover:text-white hover:bg-secondarys'}`}>
@@ -89,7 +89,7 @@ const Cdetails = () => {
                       className={`lg:px-4 lg:py-[19px] px-2 py-2 rounded-[10px] text-base font-semibold duration-300 cursor-pointer ${activeTab === 'instructor' ? 'bg-secondarys text-white' : 'bg-white text-primaryTwo hover:text-white hover:bg-secondarys'}`}>
                       Instructor
                     </button>
-                  </Flex>
+                  </div>
                 </div>
                 {/* Overview */}
                 {activeTab === 'overview' && (
@@ -99,22 +99,22 @@ const Cdetails = () => {
                       <p className="text-base text-[#697585] leading-8 font-semibold py-10">Himenaeos. Vestibulum sollicitudin varius mauris non dignissim. Sed quis iaculis est. Nulla quam neque, interdum vitae fermentum lacinia, interdum eu magna. Mauris non posuere tellus. Donec quis euismod tellus. Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna hendrerit sagittis. Nullam sed mi non odio feugiat volutpat sit amet nec elit. Maecenas id hendrerit ipsum. Sed eget auctor metus, ac dapibus dolo</p>
                       <p className="text-base text-[#697585] leading-8 font-semibold">Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna hendrerit sagittis. Nullam sed mi non odio feugiat volutpat sit amet nec elit. Maecenas id hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor. Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. </p>
                     </div>
-                    <div className="py-10">
-                      <div className="flex items-center gap-x-[13px]">
+                    <div className="grid grid-cols-1 gap-5 py-10">
+                      <div className="flex lg:items-center items-start gap-x-[13px]">
                         <IoIosCheckmarkCircle className="text-[20px] text-secondarys" />
-                        <p className="font-medium lg:text-[20px] text-base text-primaryTwo leading-[47px]">
+                        <p className="font-medium lg:text-[20px] text-base text-primaryTwo lg:leading-[47px]">
                           Nibh. Nam nec eros id magna hendrerit s
                         </p>
                       </div>
-                      <div className="flex items-center gap-x-[13px]">
+                      <div className="flex lg:items-center items-start gap-x-[13px]">
                         <IoIosCheckmarkCircle className="text-[20px] text-secondarys" />
-                        <p className="font-medium lg:text-[20px] text-base text-primaryTwo leading-[47px]">
+                        <p className="font-medium lg:text-[20px] text-base text-primaryTwo lg:leading-[47px]">
                           Vitae nibh. Nam nec eros id magna hendrerit s
                         </p>
                       </div>
-                      <div className="flex items-center gap-x-[13px]">
+                      <div className="flex lg:items-center items-start gap-x-[13px]">
                         <IoIosCheckmarkCircle className="text-[20px] text-secondarys" />
-                        <p className="font-medium lg:text-[20px] text-base text-primaryTwo leading-[47px]">
+                        <p className="font-medium lg:text-[20px] text-base text-primaryTwo lg:leading-[47px]">
                           Nam nec eros id magna hendrerit s
                         </p>
                       </div>
@@ -170,7 +170,7 @@ const Cdetails = () => {
                           </div>
                         </div>
                       </div>
-                      {/* --- Section 2: Intermediate Level --- */}
+                      {/* Section 2 */}
                       <div className="mt-10">
                         <h4 className="text-primaryTwo text-2xl font-bold pb-4">
                           Intermediate Level Course
@@ -277,17 +277,17 @@ const Cdetails = () => {
                       <FaStar className="text-[20px] text-secondarys" />
                     </div>
                   </div>
-                  <div className="mb-[50px]">
-                    <div className="lg:space-x-5">
+                  <div className="mb-[50px] lg:w-[868px]">
+                    <div className="lg:space-x-5 grid lg:grid-cols-2 grid-cols-1 gap-5">
                       <input
                         type="text"
                         placeholder="Your Name"
-                        className="py-[25px] px-[30px] w-full lg:w-[650px] bg-[#F6F6F6] rounded-sm outline-0 font-Urbanist font-bold text-base text-[#697585] leading-[26px]"
+                        className="py-[25px] px-[30px] w-full  bg-[#F6F6F6] rounded-sm outline-0 font-Urbanist font-bold text-base text-[#697585] leading-[26px]"
                       />
                       <input
                         type="email"
                         placeholder="Email Address"
-                        className="py-[25px] px-[30px] mt-5 lg:mt-0 w-full lg:w-[650px] bg-[#F6F6F6] rounded-sm outline-0 font-Urbanist font-bold text-base text-[#697585] leading-[26px]"
+                        className="py-[25px] px-[30px] w-full  bg-[#F6F6F6] rounded-sm outline-0 font-Urbanist font-bold text-base text-[#697585] leading-[26px]"
                       />
                     </div>
                     <textarea
@@ -299,15 +299,11 @@ const Cdetails = () => {
                       cols={127}
                     ></textarea>
                   </div>
-                  <div className="relative text-center lg:text-left cursor-pointer">
-                    <Button
-                      btnText={"Leave a Review"}
-                      className={
-                        "py-[19px] pl-8 pr-[52px] bg-secondarys rounded-md text-white text-[18px] font-bold relative"
-                      }
-                    />
-                    <FaArrowRightLong className="font-bold text-white absolute top-1/2 left-[13%] -translate-y-1/2" />
-                  </div>
+                  {/* btn */}
+                  <button className="btn mt-7.5">
+                    Leave a Review
+                    <FaArrowRight />
+                  </button>
                 </div>
                 </div>
                 )}
