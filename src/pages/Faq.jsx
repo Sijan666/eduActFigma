@@ -15,12 +15,12 @@ const Faq = () => {
     <>
       {/* Header part */}
       <div className="lg:pt-[174px] lg:pb-[154px] py-16 lg:py-25 bg-black text-center text-white">
-        <Container className="w-[390px] lg:w-330 mx-auto">
+        <Container className="">
           <h3 className="font-bold text-[32px] lg:text-[50px]">FAQs</h3>
           <p className="text-lg lg:text-xl pt-4">Home / FAQs</p>
         </Container>
       </div>
-      <Container className="w-[390px] lg:w-330 mx-auto">
+      <Container className="">
         <Flex
           className={"gap-x-2 lg:text-2xl text-lg text-primarys font-bold justify-center mt-15 lg:mt-30"}>
           Our Recent FAQS
