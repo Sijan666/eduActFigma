@@ -19,10 +19,12 @@ import About from "./pages/About";
 import ProductDetails from "./pages/ProductDetails";
 import Coursepage from "./pages/Coursepage";
 import Cdetails from "./pages/cDetails";
+import ReactLenis from "lenis/react";
 
 function App() {
   return (
     <>
+    <ReactLenis root options={{lerp: 0.05, duration: 1.5, smoothWheel: true, wheelMultiplier: 0.8,}}>
       <Routes>
         <Route path="/" element={<RootLayouts />}>
           <Route index element={<Home />} />
@@ -46,6 +48,7 @@ function App() {
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>
+    </ReactLenis>
     </>
   );
 }
