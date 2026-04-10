@@ -7,47 +7,47 @@ import { FaArrowRight } from 'react-icons/fa6'
 const Login = () => {
     return (
         <>
-        <section className='login&reg'>
+        <section className='login-reg'>
             {/* common bg for pages */}
-            <div className="bg-[url('/src/assets/commonPage.png')] pt-[174px] pb-[154px]">
-            {/* common bg for pages */}
+            <div className="bg-[url('/src/assets/commonPage.png')] bg-cover bg-center pt-20 pb-16 md:pt-[174px] md:pb-[154px]">
                 <Container>
-                {/* common tag for pages */}
-                <div className="text-center">
-                    <h3 className="text-[50px] font-bold text-white uppercase">Login</h3>
-                    <p className="text-[20px] text-white">Home  /  Login</p>
-                </div>
-                {/* common tag for pages */}
+                    {/* common tag for pages */}
+                    <div className="text-center">
+                        <h3 className="text-3xl md:text-[50px] font-bold text-white uppercase">Login</h3>
+                        <p className="text-base md:text-[20px] text-white mt-2 md:mt-0">Home  /  Login</p>
+                    </div>
+                    {/* common tag for pages */}
                 </Container>
             </div>
+            
             <Container>
-                <div className="py-30">
-                    <div className="py-10 px-12.5 bg-[#F6F6F6] mb-12.5 rounded-[14px]">
-                        <p className='font-medium text-primaryTwo lg:text-[18px] text-base'>We have a demo account setup. <span className='font-bold'>Username: demo</span> and <span className='font-bold'>Password:</span> <span className='font-bold text-secondarys'>demo</span></p>
+                <div className="py-12 md:py-30">
+                    <div className="py-6 px-6 md:py-10 md:px-12.5 bg-[#F6F6F6] mb-8 md:mb-12.5 rounded-[14px]">
+                        <p className='font-medium text-primaryTwo text-sm md:text-base lg:text-[18px]'>
+                            We have a demo account setup. <span className='font-bold'>Username: demo</span> and <span className='font-bold'>Password:</span> <span className='font-bold text-secondarys'>demo</span>
+                        </p>
                     </div>
-                    <div className="p-15 shadow-newMade rounded-[14px]">
-                        <Flex className={'lg:justify-between flex-wrap gap-y-10'}>
+                    
+                    <div className="p-6 md:p-10 lg:p-15 shadow-newMade rounded-[14px]">
+                        <Flex className={'flex-col lg:flex-row lg:justify-between items-center lg:items-start gap-y-10 lg:gap-y-0'}>
                             {/* login */}
-                            <div className="login">
-                                <h4 className='text-[32px] font-bold text-primaryTwo pb-10'>Login</h4>
+                            <div className="login w-full lg:w-auto">
+                                <h4 className='text-2xl md:text-[32px] font-bold text-primaryTwo pb-6 md:pb-10'>Login</h4>
                                 <div className="name pb-5">
-                                    <input type="text" placeholder='User Namer or Email Address*' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold lg:w-[496px] bg-[#F6F6F6] outline-none'/>
+                                    <input type="text" placeholder='User Name or Email Address*' className='w-full lg:w-[496px] rounded-sm px-5 py-4 md:px-7.5 md:py-[25px] text-[#697585] text-sm md:text-base font-semibold bg-[#F6F6F6] outline-none'/>
                                 </div>
                                 <div className="pass pb-7.5">
-                                    <input type="number" placeholder='Password*' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold lg:w-[496px] bg-[#F6F6F6] outline-none'/>
+                                    <input type="password" placeholder='Password*' className='w-full lg:w-[496px] rounded-sm px-5 py-4 md:px-7.5 md:py-[25px] text-[#697585] text-sm md:text-base font-semibold bg-[#F6F6F6] outline-none'/>
                                 </div>
-                                <div className="flex justify-between items-center">
+                                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0">
                                     <div className="flex gap-x-2.5 items-center">
-                                        <input type="checkbox" name="" id="" />
-                                        <p className='text-[#697585] text-base font-semibold'>Remember Me?</p>
+                                        <input type="checkbox" name="" id="remember_me" />
+                                        <label htmlFor="remember_me" className='text-[#697585] text-sm md:text-base font-semibold cursor-pointer'>Remember Me?</label>
                                     </div>
-                                    <p className='text-[#697585] text-base font-semibold'>Forget Password?</p>
+                                    <p className='text-[#697585] text-sm md:text-base font-semibold cursor-pointer hover:underline'>Forget Password?</p>
                                 </div>
                                 {/* btn */}
-                                {/* <div className="bg-[#f58c37] text-white text-[18px] font-bold rounded-md w-27 mt-10">
-                                    <Button btnText={'Login'}className={"bg-secondarys py-5 px-8 rounded-md w-27 clip-ss flex items-center gap-x-2"}/>
-                                </div> */}
-                                <button className="btn">
+                                <button className="btn mt-6 md:mt-5 w-full sm:w-auto flex justify-center items-center gap-2">
                                     Login
                                     <FaArrowRight />
                                 </button>
@@ -55,26 +55,23 @@ const Login = () => {
                             </div>
                             {/* login */}
                             {/* border */}
-                            <div className="lg:h-100 lg:w-px w-60 h-px border-dashed border border-[#B7B0B4]"></div>
+                            <div className="lg:h-[450px] lg:w-px w-full h-px border-dashed border border-[#B7B0B4] my-2 lg:my-0"></div>
                             {/* border */}
                             {/* register */}
-                            <div className="register">
-                                <h4 className='text-[32px] font-bold text-primaryTwo pb-10'>Register</h4>
+                            <div className="register w-full lg:w-auto">
+                                <h4 className='text-2xl md:text-[32px] font-bold text-primaryTwo pb-6 md:pb-10'>Register</h4>
                                 <div className="name pb-5">
-                                    <input type="text" placeholder='User Name' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold lg:w-[496px] bg-[#F6F6F6] outline-none'/>
+                                    <input type="text" placeholder='User Name' className='w-full lg:w-[496px] rounded-sm px-5 py-4 md:px-7.5 md:py-[25px] text-[#697585] text-sm md:text-base font-semibold bg-[#F6F6F6] outline-none'/>
                                 </div>
                                 <div className="pass pb-7.5">
-                                    <input type="number" placeholder='Password*' className='rounded-sm px-7.5 py-[25px] text-[#697585] text-base font-semibold lg:w-[496px] bg-[#F6F6F6] outline-none'/>
+                                    <input type="password" placeholder='Password*' className='w-full lg:w-[496px] rounded-sm px-5 py-4 md:px-7.5 md:py-[25px] text-[#697585] text-sm md:text-base font-semibold bg-[#F6F6F6] outline-none'/>
                                 </div>
                                 <div className="flex gap-x-2.5 items-center">
-                                    <input type="checkbox" name="" id="" />
-                                    <p className='text-[#697585] text-base font-semibold'>I Accept Company Privacy Policy</p>
+                                    <input type="checkbox" name="" id="privacy_policy" />
+                                    <label htmlFor="privacy_policy" className='text-[#697585] text-sm md:text-base font-semibold cursor-pointer'>I Accept Company Privacy Policy</label>
                                 </div>
                                 {/* btn */}
-                                {/* <div className="bg-[#f58c37] text-white text-[18px] font-bold rounded-md w-[130px] mt-10">
-                                    <Button btnText={'Register'}className={"bg-secondarys py-5 px-8 rounded-md w-[130px] clip-ss flex items-center gap-x-2"}/>
-                                </div> */}
-                                <button className="btn">
+                                <button className="btn mt-6 md:mt-5 w-full sm:w-auto flex justify-center items-center gap-2">
                                     Register
                                     <FaArrowRight />
                                 </button>
